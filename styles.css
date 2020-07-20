@@ -1,0 +1,59 @@
+* {
+  transition: 0.5s ease;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+@keyframes drive-car-from-right-to-left {
+  100% {
+    margin-left: -200px;
+  }
+  0% {
+    margin-left: 350px;
+  }
+}
+
+@keyframes play {
+  0% {
+    margin-left: -50px;
+  }
+  100% {
+    background-position: -864px;
+    margin-left: 500px;
+  }
+}
+
+.bg {
+  background-image: url("./assets/town.jpg");
+  width: 500px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+img {
+  width: 300px;
+  margin-top: 0px;
+  position: absolute;
+}
+
+.red-car {
+  margin-top: 150px;
+  z-index: 2;
+  transform: scale(80%);
+  animation: drive-car-from-right-to-left 3s linear infinite;
+}
+
+.running-boy {
+  width: 144px;
+  height: 144px;
+  transform: scale(70%);
+  z-index: 1;
+  margin-top: 180px;
+  background: url("./assets/spritesheet.png");
+  animation: play 1.5s steps(6) infinite;
+}
