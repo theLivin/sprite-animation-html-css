@@ -1,2 +1,3 @@
-# sprite-animation-html-css
-2d sprite animation using HTML and CSS
+# 2D Animation Using HTML & CSS
++ Tweening
++ Sprite Animation
